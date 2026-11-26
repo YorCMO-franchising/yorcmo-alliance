@@ -1,6 +1,6 @@
 # yorCMO Alliance website
 
-Static site for the yorCMO Alliance and its marketplace (yorCMO 3.0). No build step: open `index.html` or serve the folder from any static host.
+Static site for the yorCMO Alliance and its marketplace (yorCMO 3.0). No build step: open `index.html` or serve the folder from any static host. Deployed on Vercel (`vercel.json`: clean URLs, so `/membership` serves `membership.html`).
 
 ## Pages
 - `index.html` — Alliance home
