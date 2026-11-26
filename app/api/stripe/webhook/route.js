@@ -7,7 +7,7 @@ export const runtime = 'nodejs';
 export const dynamic = 'force-dynamic';
 
 // Stripe → Supabase: create the member's account on first payment and keep
-// membership and add-on status in sync with their subscriptions.
+// membership status in sync with their subscription.
 export async function POST(request) {
   const body = await request.text();
   let event;

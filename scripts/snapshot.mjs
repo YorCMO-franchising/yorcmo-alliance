@@ -12,7 +12,7 @@ if (!appUrl || !outDir || !basePath) throw new Error('usage: snapshot.mjs <appUr
 
 const PUBLIC = ['/', '/story', '/membership', '/marketplace', '/operating-cmo', '/join', '/login', '/welcome'];
 const MEMBER = ['/member', '/member/marketplace', '/member/listings', '/member/listings/new', '/member/inbox',
-  '/member/members', '/member/profile', '/member/services', '/member/admin', '/account'];
+  '/member/members', '/member/profile', '/member/admin', '/account'];
 
 const fileFor = (route) => (route === '/' ? 'index.html' : `${route.replace(/^\//, '')}.html`);
 

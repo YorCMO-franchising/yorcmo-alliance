@@ -51,11 +51,6 @@ export default function Story() {
                 Professionals Association, a community for fractional executives across marketing, finance, sales,
                 operations and technology.
               </p>
-              <p>
-                And the support we gave our CMOs grew up too. It started as a concierge service: a coordinator, a
-                shared plan, and a weekly rhythm. It became <strong>CORE</strong>, a marketing operating system that
-                runs a client's marketing week after week.
-              </p>
             </div>
           </div>
 
@@ -91,7 +86,7 @@ export default function Story() {
               </p>
               <p>
                 The Alliance puts leads first, with a book, speaking and a community that put members in rooms owners
-                already trust. It gives members leverage through Cobbler and CORE, and a marketplace to sell what they
+                already trust. It gives members leverage through Cobbler and the FROST framework, and a marketplace to sell what they
                 know to each other.
               </p>
               <dl className="statements light">
@@ -109,7 +104,7 @@ export default function Story() {
         <div className="wrap founder">
           <img className="founder-photo" src={JOE_PHOTO} alt="Joe Frost" width="320" height="320" />
           <div>
-            <div className="kicker">Founder and coach</div>
+            <div className="kicker">Founder</div>
             <h2>Meet Joe Frost</h2>
             <p className="lede" style={{ color: '#dfe5ee' }}>
               A 7× founder, Joe has spent 25 years as an entrepreneur, building companies where trusted specialists
@@ -127,7 +122,8 @@ export default function Story() {
               President of Entrepreneurs' Organization (EO) Nebraska, and a keynote speaker on the future of work on
               three continents. He hosts The Fractional C-Suite Retreat podcast, with 85+ episodes, and the weekly Cup
               of Joe on LinkedIn Live. He wrote <em>New Media Habits</em> and <em>Million Dollar Fractional Firm</em>,
-              the complete FROST framework. Friends call him "Omaha Joe."
+              the complete FROST framework, and coaches a select group of fractional executives 1:1, by application.
+              Friends call him "Omaha Joe."
             </p>
             <blockquote className="founder-quote">
               "You are not built to have one boss. You are built to have many."
@@ -160,7 +156,7 @@ export default function Story() {
       <section className="white">
         <div className="wrap">
           <div className="section-head">
-            <div className="kicker">How Joe coaches</div>
+            <div className="kicker">The path members follow</div>
             <h2>The FROST framework</h2>
             <p className="lede">
               FROST is Joe's strategy system for fractional executives who are ready to stop being contractors and
@@ -185,8 +181,8 @@ export default function Story() {
             ))}
           </div>
           <div className="callout" style={{ marginTop: 32 }}>
-            <strong>FROST is the blueprint. The Alliance is where you build it.</strong> Members get the coaching, the
-            community and the leverage to put FROST to work in their own firm. Want to go deeper on your own? Joe's
+            <strong>FROST is the blueprint. The Alliance is where you build it.</strong> Members get the community, the
+            tools and the peers to put FROST to work in their own firm. Want to go deeper on your own? Joe's
             book, course, workshop and 1:1 coaching are at <a href={FROST_SITE}>frost-framework.com</a>. More about Joe
             at <a href={JOE_SITE}>josephmarkfrost.com</a>.
           </div>

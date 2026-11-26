@@ -9,7 +9,6 @@ const LINKS = [
   ['My listings', '/member/listings'],
   ['Inbox', '/member/inbox'],
   ['Members', '/member/members'],
-  ['yorCMO services', '/member/services'],
   ['My profile', '/member/profile'],
 ];
 

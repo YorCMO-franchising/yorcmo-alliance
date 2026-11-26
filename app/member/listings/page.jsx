@@ -50,7 +50,7 @@ export default async function MyListings({ searchParams }) {
       ) : (
         <div className="empty">
           <h3>You haven't listed anything yet.</h3>
-          <p>Sell services, delivery capacity, playbooks or a niche CORE to other members.</p>
+          <p>Sell services, delivery capacity, playbooks or products to other members.</p>
           <p style={{ marginTop: 14 }}><Link className="btn dark" href="/member/listings/new">Create your first listing</Link></p>
         </div>
       )}

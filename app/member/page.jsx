@@ -50,7 +50,7 @@ export default async function Dashboard() {
           <p style={{ marginTop: 12 }}><Link href="/member/marketplace">Browse the marketplace →</Link></p>
         </div>
         <div className="grid">
-          <div className="card"><span className="tag">Leverage</span><h3>CORE and shared services</h3><p>Add CORE Wholesale, back office or concierge to your firm.</p><p><Link href="/member/services">See services →</Link></p></div>
+          <div className="card"><span className="tag">Get found</span><h3>Your directory profile</h3><p>Members refer work to people they can find. Keep your niches and bio current.</p><p><Link href="/member/profile">Edit your profile →</Link></p></div>
           <div className="card"><span className="tag">Referrals</span><h3>Refer work both ways</h3><p>{REFERRAL_TERMS}</p><p><Link href="/member/members">Find a member →</Link></p></div>
         </div>
       </div>

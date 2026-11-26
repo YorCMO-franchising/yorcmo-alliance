@@ -70,7 +70,7 @@ create table public.listings (
   seller_id uuid not null references public.profiles (id) on delete cascade,
   title text not null check (char_length(title) between 3 and 120),
   category text not null
-    check (category in ('service', 'product', 'core', 'capacity', 'ip', 'other')),
+    check (category in ('service', 'product', 'capacity', 'ip', 'other')),
   summary text not null check (char_length(summary) between 10 and 280),
   description text,
   pricing_model text not null default 'quote'
@@ -136,8 +136,7 @@ create index inquiries_seller_idx on public.inquiries (seller_id, created_at des
 create index inquiries_buyer_idx on public.inquiries (buyer_id, created_at desc);
 
 -- ---------------------------------------------------------------------------
--- Services a member buys from yorCMO (membership, CORE Wholesale, back office,
--- concierge). Written only by the Stripe webhook.
+-- Membership subscriptions. Written only by the Stripe webhook.
 -- ---------------------------------------------------------------------------
 create table public.member_services (
   stripe_subscription_id text primary key,

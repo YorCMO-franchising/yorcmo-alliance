@@ -22,7 +22,7 @@ export default function OperatingCMO() {
           </div>
           <div className="grid">
             <div className="card"><span className="tag">01</span><h3>A leader at the table</h3><p>Owns the decisions and answers for the results.</p></div>
-            <div className="card"><span className="tag">02</span><h3>Systems that hold the work</h3><p>The 6 Fundamentals of Marketing and CORE, so the work outlasts any one person.</p></div>
+            <div className="card"><span className="tag">02</span><h3>Systems that hold the work</h3><p>The 6 Fundamentals of Marketing, so the work outlasts any one person.</p></div>
             <div className="card"><span className="tag">03</span><h3>Execution every week</h3><p>The team and the cadence that keep marketing moving.</p></div>
           </div>
         </div>

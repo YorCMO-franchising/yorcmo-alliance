@@ -22,7 +22,7 @@ export default async function Browse({ searchParams }) {
   return (
     <>
       <div className="page-head">
-        <div><div className="kicker">Member marketplace</div><h1>Marketplace</h1><p className="muted">Services, capacity, playbooks and niche COREs from other members.</p></div>
+        <div><div className="kicker">Member marketplace</div><h1>Marketplace</h1><p className="muted">Services, capacity, playbooks and products from other members.</p></div>
         <Link className="btn dark" href="/member/listings/new">Sell something</Link>
       </div>
       <form className="mk-tools" method="get">

@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { ADD_ONS, CATEGORIES, OFFERINGS, REFERRAL_TERMS, supabaseConfigured } from '@/lib/config';
+import { CATEGORIES, REFERRAL_TERMS, supabaseConfigured } from '@/lib/config';
 import { createAdminClient } from '@/lib/supabase/admin';
 import { DEMO, demoCounts } from '@/lib/demo';
 
@@ -24,7 +24,6 @@ async function liveCounts() {
 const CATEGORY_HELP = {
   service: 'Specialist services members deliver for each other or each other\'s clients.',
   capacity: 'Trusted hands to take on delivery so you can step out of the calendar.',
-  core: 'Niche COREs built by members for a vertical, ready to run with clients.',
   ip: 'Playbooks, frameworks and workshops you can license instead of rebuilding.',
   product: 'Templates, tools and assets that save hours.',
 };
@@ -37,7 +36,7 @@ export default async function Marketplace() {
         <div className="wrap">
           <div className="kicker">The member marketplace</div>
           <h1>Sell what you know. Buy the capacity you need.</h1>
-          <p className="lede">A members-only market where Alliance members sell services, delivery capacity, playbooks and niche COREs to each other.</p>
+          <p className="lede">A members-only market where Alliance members sell services, delivery capacity, playbooks and products to each other.</p>
           <div className="ctas">
             <Link className="btn" href="/join">Join to buy and sell</Link>
             <Link className="btn ghost" href="/login?next=/member/marketplace">Members: sign in</Link>
@@ -59,7 +58,7 @@ export default async function Marketplace() {
         <div className="wrap">
           <div className="section-head">
             <div className="kicker">What members list</div>
-            <h2>Five kinds of listings.</h2>
+            <h2>Services, capacity, know-how and tools.</h2>
           </div>
           <div className="grid g3">
             {Object.entries(CATEGORY_HELP).map(([k, v]) => (
@@ -88,23 +87,11 @@ export default async function Marketplace() {
         </div>
       </section>
 
-      <section>
+      <section className="center">
         <div className="wrap">
-          <div className="section-head">
-            <div className="kicker">From yorCMO</div>
-            <h2>CORE and shared services for members.</h2>
-            <p className="lede">Bought from the member area and billed monthly. Each is optional and separately cancellable.</p>
-          </div>
-          <div className="grid g3">
-            {ADD_ONS.map((k) => (
-              <div className="card" key={k}>
-                <span className="tag">{OFFERINGS[k].price} {OFFERINGS[k].unit}</span>
-                <h3>{OFFERINGS[k].name}</h3>
-                <p>{OFFERINGS[k].summary}</p>
-              </div>
-            ))}
-          </div>
-          <p style={{ marginTop: 30 }}><Link className="btn dark" href="/join">Join the Alliance</Link></p>
+          <h2>Buy and sell with members who get it.</h2>
+          <p className="lede">The marketplace is included with Alliance membership.</p>
+          <p style={{ marginTop: 26 }}><Link className="btn dark" href="/join">Join the Alliance</Link></p>
         </div>
       </section>
     </>

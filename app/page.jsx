@@ -70,15 +70,15 @@ export default function Home() {
               <span className="tag">Leverage</span>
               <h3>A system that runs without you</h3>
               <p>
-                Cobbler™ runs your practice the way CORE, our marketing operating system, runs a client's
-                marketing. When you're ready, take CORE to your clients at wholesale and mark it up as you like.
+                Cobbler™, our practice workspace, and the FROST framework give you a system for pipeline, delivery
+                and growth, so the firm doesn't depend on you being in every meeting.
               </p>
             </div>
             <div className="card">
               <span className="tag">Marketplace</span>
               <h3>Sell to people who get it</h3>
               <p>
-                List your services, delivery capacity, playbooks and niche COREs for other members, and buy from
+                List your services, delivery capacity, playbooks and products for other members, and buy from
                 members who deliver the work the way you would.
               </p>
             </div>
@@ -90,7 +90,7 @@ export default function Home() {
         <div className="wrap founder">
           <img className="founder-photo" src={JOE_PHOTO} alt="Joe Frost" width="320" height="320" />
           <div>
-            <div className="kicker">Your founder and coach</div>
+            <div className="kicker">Founder</div>
             <h2>Joe Frost</h2>
             <p className="lede" style={{ color: '#dfe5ee' }}>
               7× founder, 25 years as an entrepreneur, university professor of entrepreneurship, and creator of
@@ -100,8 +100,8 @@ export default function Home() {
               Joe founded yorCMO and the Fractional Professionals Association, the country's largest
               community of fractional executives, and serves as President of EO Nebraska. He wrote{' '}
               <em>Million Dollar Fractional Firm</em> after watching talented fractionals stay stuck as contractors
-              when they had everything they needed to build a firm. In the Alliance, he coaches members from steady
-              income, to a practice that scales, to a firm they own.
+              when they had everything they needed to build a firm. FROST is the path Alliance members follow: from
+              steady income, to a practice that scales, to a firm they own.
             </p>
             <blockquote className="founder-quote">
               "We spent the first decade teaching CMOs how to become fractional executives. Let's spend the next
@@ -115,12 +115,12 @@ export default function Home() {
       <section className="white">
         <div className="wrap">
           <div className="section-head">
-            <div className="kicker">The path Joe coaches</div>
+            <div className="kicker">The path members follow</div>
             <h2>Earn. Scale. Own.</h2>
             <p className="lede">Three stages built on the five FROST pillars: Focus, Resourcing, Own Your Market, Systems and Transfer Trust. Every quarter we track income, owner delivery hours, repeatable revenue, profit and transferable assets, so you can see the firm becoming an asset.</p>
           </div>
           <div className="grid g3 eso">
-            <div className="card"><span className="tag">Focus · Own Your Market</span><h3>Earn</h3><p>Build a repeatable pipeline and steady income through Cobbler, referrals, collaboration with members, and work with the yorCMO flagship firm.</p></div>
+            <div className="card"><span className="tag">Focus · Own Your Market</span><h3>Earn</h3><p>Build a repeatable pipeline and steady income through Cobbler, referrals and collaboration with other members.</p></div>
             <div className="card"><span className="tag">Resourcing · Systems</span><h3>Scale</h3><p>Document your methods, productize your offers, and hand delivery to trusted capacity, much of it from other members.</p></div>
             <div className="card"><span className="tag">Transfer Trust</span><h3>Own</h3><p>Develop your own IP, recurring offers, an independent client base, and a delivery system that runs without you.</p></div>
           </div>
