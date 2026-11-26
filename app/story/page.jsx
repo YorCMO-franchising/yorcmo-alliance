@@ -27,7 +27,7 @@ export default function Story() {
                 many of the best CMOs don't want to give one company all of their time.
               </p>
               <p>
-                Joe Frost co-founded yorCMO to connect the two: experienced CMOs who join a leadership team for a
+                Joe Frost founded yorCMO to connect the two: experienced CMOs who join a leadership team for a
                 fraction of the time, and stay accountable for the results every week.
               </p>
               <p>

@@ -27,7 +27,7 @@ export default function Home() {
             <div className="kicker">How this started</div>
             <h2>Ten years ago, we bet that great CMOs didn't need to be full-time.</h2>
             <p className="lede">
-              In 2016, Joe Frost co-founded yorCMO on a simple idea: growing companies need senior marketing
+              In 2016, Joe Frost founded yorCMO on a simple idea: growing companies need senior marketing
               leadership, and the best marketing leaders can deliver it to several companies at once.
             </p>
             <p style={{ marginTop: 16 }}>
@@ -97,7 +97,7 @@ export default function Home() {
               the FROST framework for building a fractional firm.
             </p>
             <p style={{ marginTop: 14 }}>
-              Joe co-founded yorCMO, founded the Fractional Professionals Association, the country's largest
+              Joe founded yorCMO and the Fractional Professionals Association, the country's largest
               community of fractional executives, and serves as President of EO Nebraska. He wrote{' '}
               <em>Million Dollar Fractional Firm</em> after watching talented fractionals stay stuck as contractors
               when they had everything they needed to build a firm. In the Alliance, he coaches members from steady

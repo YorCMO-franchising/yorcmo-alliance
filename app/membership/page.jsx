@@ -5,7 +5,7 @@ export const metadata = { title: 'Membership' };
 
 const FAQ = [
   ['Who is the Alliance for?', 'CMOs, fractional and operating executives, marketers, specialists and consultants who want to build a firm they own, not just a calendar of hours.'],
-  ['Who runs it?', 'The Alliance was founded by Joe Frost, who co-founded yorCMO in 2016, founded the Fractional Professionals Association, created the FROST framework and wrote Million Dollar Fractional Firm. Joe and the yorCMO team coach members from steady income to a firm they own.'],
+  ['Who runs it?', 'The Alliance was founded by Joe Frost, who founded yorCMO in 2016 and the Fractional Professionals Association, created the FROST framework and wrote Million Dollar Fractional Firm. Joe and the yorCMO team coach members from steady income to a firm they own.'],
   ['How does billing work?', `Membership is ${OFFERINGS.membership.price} a month per person, billed by card through Stripe. Update your card, download invoices or cancel from your account.`],
   ['What happens after I pay?', 'Your account is created right away. Sign in with your email (we send a one-time link, no password), complete your profile, and the member area, directory and marketplace open up.'],
   ['How does the marketplace work?', 'Members list services, delivery capacity, playbooks and niche COREs for other members. Each listing is reviewed before it goes live. Buyers contact sellers through the marketplace and agree terms directly.'],
