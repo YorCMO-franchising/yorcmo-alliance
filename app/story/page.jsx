@@ -112,22 +112,25 @@ export default function Story() {
             <div className="kicker">Founder and coach</div>
             <h2>Meet Joe Frost</h2>
             <p className="lede" style={{ color: '#dfe5ee' }}>
-              Joe has spent 25 years building companies where trusted specialists come together to do great work,
-              then go on to the next thing.
+              Joe has spent 25 years as an entrepreneur, building companies where trusted specialists come together to
+              do great work.
             </p>
             <p style={{ marginTop: 14 }}>
-              He built HomeSmartz, a mortgage brokerage, and Frost Media Group, where two decades of film crews showed
-              him how a team of specialists assembled for one project can outperform a permanent staff. Then came
-              yorCMO, the Fractional Professionals Association, and Guided Outsourcing, which builds skilled global
-              teams.
+              He built HomeSmartz, a mortgage brokerage that thrived on distributed trust, and Frost Media Group, where
+              two decades of film crews (specialists assembled for the project, trusted with their craft, dissolved at
+              the wrap) showed him the original decentralized workforce. Then came yorCMO, the Fractional
+              Professionals Association, the country's largest community of fractional executives, and Guided
+              Outsourcing, which builds skilled global teams.
             </p>
             <p>
-              He is a university professor of entrepreneurship, the author of <em>New Media Habits</em>, host of The
-              Fractional C-Suite Retreat podcast and the weekly Cup of Joe LinkedIn Live, and a keynote speaker on the
-              future of work on three continents. He lives in Omaha, Nebraska.
+              An MBA with a background in chemical engineering, Joe is a university professor of entrepreneurship,
+              President of Entrepreneurs' Organization (EO) Nebraska, and a keynote speaker on the future of work on
+              three continents. He hosts The Fractional C-Suite Retreat podcast, with 85+ episodes, and the weekly Cup
+              of Joe on LinkedIn Live. He wrote <em>New Media Habits</em> and <em>Million Dollar Fractional Firm</em>,
+              the complete FROST framework. Friends call him "Omaha Joe."
             </p>
             <blockquote className="founder-quote">
-              "What you know should build something you own, in your own firm."
+              "You are not built to have one boss. You are built to have many."
             </blockquote>
           </div>
         </div>
@@ -136,21 +139,72 @@ export default function Story() {
       <section>
         <div className="wrap">
           <div className="section-head">
+            <div className="kicker">Why Joe built FROST</div>
+            <h2>Most fractionals accidentally rebuild the job they escaped.</h2>
+            <p className="lede">
+              Running a fractional CMO firm, Joe watched talented executives leave corporate for freedom, then become
+              the chief problem-solver, the inbox hostage, the scope-creep sponge. Not because they lacked skill, but
+              because no one gave them a system. He traced it to five distractions.
+            </p>
+          </div>
+          <ol className="distractions">
+            <li><strong>Chasing leads instead of building lead sources.</strong> Pros don't chase leads. Pros build faucets.</li>
+            <li><strong>Fighting scope creep instead of monetizing it.</strong> When extra work appears, bring in a partner and profit.</li>
+            <li><strong>Selling agnostic instead of specializing.</strong> Generalists grind. Specialists scale.</li>
+            <li><strong>Maximizing income instead of optimizing ROI.</strong> The goal is not to work more. It's to earn smarter.</li>
+            <li><strong>Trading hours instead of building equity.</strong> Most fractionals sell the one thing they cannot scale: their own time.</li>
+          </ol>
+        </div>
+      </section>
+
+      <section className="white">
+        <div className="wrap">
+          <div className="section-head">
             <div className="kicker">How Joe coaches</div>
             <h2>The FROST framework</h2>
             <p className="lede">
-              FROST is Joe's system for turning a fractional practice into a firm that builds equity. Alliance members
-              are coached through it in three stages.
+              FROST is Joe's strategy system for fractional executives who are ready to stop being contractors and
+              start being firm owners. In the Alliance, members work through it in three stages: Earn, Scale, Own.
             </p>
           </div>
-          <div className="grid g3 eso">
-            <div className="card"><span className="tag">Earn</span><h3>Focus and Own the Room</h3><p>Pick a specialization, and find the rooms and referral partners that feed it. Goal: a repeatable pipeline and steady income.</p></div>
-            <div className="card"><span className="tag">Scale</span><h3>Resources and System</h3><p>The people, processes and technology that make your outcomes repeatable. Goal: delivery that doesn't need you in every meeting.</p></div>
-            <div className="card"><span className="tag">Own</span><h3>Trust Transfer</h3><p>Remove the dependency on you, so clients trust the firm, not just the founder. Goal: a practice that builds equity over time.</p></div>
+          <div className="frost-grid">
+            {[
+              ['F', 'Focus', 'The first domino', 'Earn', 'Specialize, sharpen your message, and choose the niche you can dominate. Your niche isn\'t a limitation; it\'s the lever that makes you impossible to ignore.'],
+              ['R', 'Resourcing', 'The engine of scale', 'Scale', 'Build your bench: team, peers, partners, vendors and lead sources. Do only what only you can do. Everything else is a resourcing decision.'],
+              ['O', 'Own Your Market', 'Authority over attention', 'Earn', 'Become the category-of-one in your niche with a signature framework, offer and content. You don\'t win because you\'re talented. You win because you\'re known.'],
+              ['S', 'Systems', 'Built to scale without you', 'Scale', 'Workflows, SOPs, evergreen engines and AI workers, so you shift from operator to owner. Your future firm is human, outsourced and AI.'],
+              ['T', 'Transfer Trust', 'From person to platform', 'Own', 'Move trust from you, to your systems, to your team, to your firm, until the business is an asset you could sell.'],
+            ].map(([l, name, sub, stage, body]) => (
+              <div className="card frost-card" key={l}>
+                <div className="frost-letter">{l}</div>
+                <span className="tag">{stage}</span>
+                <h3>{name}</h3>
+                <div className="small muted" style={{ marginBottom: 8 }}>{sub}</div>
+                <p className="small">{body}</p>
+              </div>
+            ))}
           </div>
-          <p style={{ marginTop: 24 }}>
-            Learn more at <a href={FROST_SITE}>frost-framework.com</a> and <a href={JOE_SITE}>josephmarkfrost.com</a>.
-          </p>
+          <div className="callout" style={{ marginTop: 32 }}>
+            <strong>FROST is the blueprint. The Alliance is where you build it.</strong> Members get the coaching, the
+            community and the leverage to put FROST to work in their own firm. Want to go deeper on your own? Joe's
+            book, course, workshop and 1:1 coaching are at <a href={FROST_SITE}>frost-framework.com</a>. More about Joe
+            at <a href={JOE_SITE}>josephmarkfrost.com</a>.
+          </div>
+        </div>
+      </section>
+
+      <section className="dark center">
+        <div className="wrap manifesto">
+          <div className="kicker">The Fractional Firm Manifesto</div>
+          <h2>We are not freelancers. We are firm owners.</h2>
+          <ul>
+            <li>We do not sell hours. We sell outcomes.</li>
+            <li>We do not chase clients. We attract them.</li>
+            <li>We do not compete on price. We compete on authority.</li>
+            <li>We do not build dependency. We build transferable trust.</li>
+            <li>We do not just earn income. We build equity.</li>
+          </ul>
+          <p className="quote" style={{ margin: '28px auto 0', fontSize: 26 }}>Let's build something that <em>outlives us</em>.</p>
         </div>
       </section>
 

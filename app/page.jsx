@@ -93,13 +93,15 @@ export default function Home() {
             <div className="kicker">Your founder and coach</div>
             <h2>Joe Frost</h2>
             <p className="lede" style={{ color: '#dfe5ee' }}>
-              Entrepreneur for 25 years, founder of five companies, and a university professor of entrepreneurship.
+              25 years as an entrepreneur, university professor of entrepreneurship, and creator of the FROST
+              framework for building a fractional firm.
             </p>
             <p style={{ marginTop: 14 }}>
-              Joe co-founded yorCMO, founded the Fractional Professionals Association, and created the FROST
-              framework, his system for turning a fractional practice into a firm that builds equity. In the
-              Alliance, he coaches members through it: from steady income, to a practice that scales, to a firm
-              you own.
+              Joe co-founded yorCMO, founded the Fractional Professionals Association, the country's largest
+              community of fractional executives, and serves as President of EO Nebraska. He wrote{' '}
+              <em>Million Dollar Fractional Firm</em> after watching talented fractionals stay stuck as contractors
+              when they had everything they needed to build a firm. In the Alliance, he coaches members from steady
+              income, to a practice that scales, to a firm they own.
             </p>
             <blockquote className="founder-quote">
               "We spent the first decade teaching CMOs how to become fractional executives. Let's spend the next
@@ -115,12 +117,12 @@ export default function Home() {
           <div className="section-head">
             <div className="kicker">The path Joe coaches</div>
             <h2>Earn. Scale. Own.</h2>
-            <p className="lede">Three stages, built on the FROST framework. Every quarter we track income, owner delivery hours, repeatable revenue, profit and transferable assets, so you can see the firm becoming an asset.</p>
+            <p className="lede">Three stages built on the five FROST pillars: Focus, Resourcing, Own Your Market, Systems and Transfer Trust. Every quarter we track income, owner delivery hours, repeatable revenue, profit and transferable assets, so you can see the firm becoming an asset.</p>
           </div>
           <div className="grid g3 eso">
-            <div className="card"><span className="tag">Stage 1</span><h3>Earn</h3><p>Build a repeatable pipeline and steady income through Cobbler, referrals, collaboration with members, and work with the yorCMO flagship firm.</p></div>
-            <div className="card"><span className="tag">Stage 2</span><h3>Scale</h3><p>Document your methods, productize your offers, and hand delivery to trusted capacity, much of it from other members.</p></div>
-            <div className="card"><span className="tag">Stage 3</span><h3>Own</h3><p>Develop your own IP, recurring offers, an independent client base, and a delivery system that runs without you.</p></div>
+            <div className="card"><span className="tag">Focus · Own Your Market</span><h3>Earn</h3><p>Build a repeatable pipeline and steady income through Cobbler, referrals, collaboration with members, and work with the yorCMO flagship firm.</p></div>
+            <div className="card"><span className="tag">Resourcing · Systems</span><h3>Scale</h3><p>Document your methods, productize your offers, and hand delivery to trusted capacity, much of it from other members.</p></div>
+            <div className="card"><span className="tag">Transfer Trust</span><h3>Own</h3><p>Develop your own IP, recurring offers, an independent client base, and a delivery system that runs without you.</p></div>
           </div>
         </div>
       </section>
@@ -138,8 +140,9 @@ export default function Home() {
             <Link className="btn outline" href="/membership">What's included</Link>
           </p>
           <p className="quote" style={{ margin: '56px auto 0' }}>
-            You bring the expertise. We bring the leverage. <em>You build the equity in your firm.</em>
+            We are not freelancers. <em>We are firm owners.</em>
           </p>
+          <p className="muted small" style={{ marginTop: 10 }}>From The Fractional Firm Manifesto by Joe Frost</p>
         </div>
       </section>
     </>

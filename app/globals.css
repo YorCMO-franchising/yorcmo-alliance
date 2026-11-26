@@ -331,3 +331,15 @@ table.t tr:last-child td { border-bottom: 0; }
   .founder-photo { width: 200px; height: 200px; }
   .chapter { grid-template-columns: 1fr; gap: 8px; padding: 32px 0; }
 }
+.distractions { list-style: none; counter-reset: d; display: grid; grid-template-columns: repeat(5, 1fr); gap: 16px; }
+.distractions li { counter-increment: d; background: var(--white); border: 1px solid var(--line); border-radius: var(--radius); padding: 22px 20px; font-size: 15px; }
+.distractions li::before { content: counter(d); display: block; font-family: "Fraunces", Georgia, serif; font-size: 34px; color: var(--accent-deep); line-height: 1; margin-bottom: 10px; }
+.distractions strong { display: block; color: var(--heading); margin-bottom: 6px; }
+.frost-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 16px; }
+.frost-card { padding: 24px 20px; }
+.frost-letter { font-family: "Fraunces", Georgia, serif; font-size: 52px; line-height: 1; color: var(--navy); margin-bottom: 10px; }
+.frost-card h3 { font-size: 20px; margin-bottom: 2px; }
+.manifesto ul { list-style: none; margin: 26px auto 0; max-width: 640px; }
+.manifesto li { font-family: "Fraunces", Georgia, serif; font-size: 22px; color: #fff; padding: 12px 0; border-bottom: 1px solid var(--line-dark); }
+@media (max-width: 1100px) { .distractions, .frost-grid { grid-template-columns: repeat(3, 1fr); } }
+@media (max-width: 700px) { .distractions, .frost-grid { grid-template-columns: 1fr; } .manifesto li { font-size: 19px; } }
