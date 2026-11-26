@@ -12,6 +12,7 @@ export default function Footer() {
           </div>
           <div>
             <h4>Alliance</h4>
+            <Link href="/story">Our story</Link>
             <Link href="/membership">Membership</Link>
             <Link href="/marketplace">Marketplace</Link>
             <Link href="/operating-cmo">Operating CMO™</Link>

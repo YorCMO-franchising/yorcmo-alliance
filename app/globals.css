@@ -312,3 +312,22 @@ table.t tr:last-child td { border-bottom: 0; }
   .stat-row { grid-template-columns: 1fr; }
   table.t { display: block; overflow-x: auto; }
 }
+
+/* Story and founder */
+.stat-n { display: block; font-family: "Fraunces", Georgia, serif; font-size: 40px; color: var(--heading); line-height: 1; margin-bottom: 6px; }
+.founder { display: grid; grid-template-columns: 320px 1fr; gap: 56px; align-items: center; }
+.founder-photo { width: 320px; height: 320px; object-fit: cover; border-radius: 16px; border: 4px solid var(--navy-3); background: var(--navy-2); }
+.founder-quote { margin-top: 24px; padding-left: 20px; border-left: 3px solid var(--accent); font-family: "Fraunces", Georgia, serif; font-size: 22px; line-height: 1.4; color: #fff; font-style: italic; }
+.story { max-width: 920px; }
+.chapter { display: grid; grid-template-columns: 170px 1fr; gap: 36px; padding: 44px 0; border-top: 1px solid var(--line); }
+.chapter:first-child { border-top: 0; padding-top: 0; }
+.chapter .when { font-weight: 800; font-size: 13px; letter-spacing: .14em; text-transform: uppercase; color: var(--accent-deep); padding-top: 10px; }
+.chapter h2 { font-size: clamp(26px, 3vw, 34px); }
+.statements.light { margin-top: 26px; border-top-color: var(--line); }
+.statements.light dt { color: var(--accent-deep); border-bottom-color: var(--line); }
+.statements.light dd { color: var(--heading); font-size: 20px; border-bottom-color: var(--line); }
+@media (max-width: 860px) {
+  .founder { grid-template-columns: 1fr; gap: 28px; }
+  .founder-photo { width: 200px; height: 200px; }
+  .chapter { grid-template-columns: 1fr; gap: 8px; padding: 32px 0; }
+}

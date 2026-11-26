@@ -11,6 +11,7 @@ export default async function Header() {
         <Link className="brand" href="/"><b>yorCMO</b><span>Alliance</span></Link>
         <MenuButton />
         <nav className="main" id="nav">
+          <Link href="/story">Our story</Link>
           <Link href="/membership">Membership</Link>
           <Link href="/marketplace">Marketplace</Link>
           <Link href="/operating-cmo">Operating CMO</Link>

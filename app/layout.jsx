@@ -4,7 +4,7 @@ import Footer from '@/components/Footer';
 
 export const metadata = {
   title: { default: 'yorCMO Alliance — Earn today. Scale tomorrow. Own the upside.', template: '%s · yorCMO Alliance' },
-  description: 'The yorCMO Alliance is the membership for marketing leaders building firms they own: pipeline, CORE, tools, community and a member marketplace.',
+  description: 'Founded by Joe Frost, the yorCMO Alliance is a membership for marketing leaders building firms they own: pipeline, coaching, CORE, community and a member marketplace.',
 };
 
 export default function RootLayout({ children }) {
