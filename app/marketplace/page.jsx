@@ -1,11 +1,13 @@
 import Link from 'next/link';
 import { ADD_ONS, CATEGORIES, OFFERINGS, REFERRAL_TERMS, supabaseConfigured } from '@/lib/config';
 import { createAdminClient } from '@/lib/supabase/admin';
+import { DEMO, demoCounts } from '@/lib/demo';
 
 export const metadata = { title: 'Marketplace' };
 export const revalidate = 300;
 
 async function liveCounts() {
+  if (DEMO) return demoCounts();
   if (!supabaseConfigured || !process.env.SUPABASE_SERVICE_ROLE_KEY) return null;
   try {
     const db = createAdminClient();

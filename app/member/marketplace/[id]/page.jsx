@@ -25,7 +25,7 @@ export default async function ListingDetail({ params }) {
         </div>
         <aside>
           <div className="card">
-            <div className="price" style={{ fontSize: 34 }}>{formatPrice(l)}</div>
+            <div className="price" style={{ fontSize: 34, color: 'var(--heading)' }}>{formatPrice(l)}</div>
             {mine ? (
               <>
                 <p className="muted">This is your listing{l.status !== 'approved' ? ` (${l.status})` : ''}.</p>
