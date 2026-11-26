@@ -93,8 +93,8 @@ export default function Home() {
             <div className="kicker">Your founder and coach</div>
             <h2>Joe Frost</h2>
             <p className="lede" style={{ color: '#dfe5ee' }}>
-              25 years as an entrepreneur, university professor of entrepreneurship, and creator of the FROST
-              framework for building a fractional firm.
+              7× founder, 25 years as an entrepreneur, university professor of entrepreneurship, and creator of
+              the FROST framework for building a fractional firm.
             </p>
             <p style={{ marginTop: 14 }}>
               Joe co-founded yorCMO, founded the Fractional Professionals Association, the country's largest

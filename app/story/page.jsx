@@ -112,8 +112,8 @@ export default function Story() {
             <div className="kicker">Founder and coach</div>
             <h2>Meet Joe Frost</h2>
             <p className="lede" style={{ color: '#dfe5ee' }}>
-              Joe has spent 25 years as an entrepreneur, building companies where trusted specialists come together to
-              do great work.
+              A 7× founder, Joe has spent 25 years as an entrepreneur, building companies where trusted specialists
+              come together to do great work.
             </p>
             <p style={{ marginTop: 14 }}>
               He built HomeSmartz, a mortgage brokerage that thrived on distributed trust, and Frost Media Group, where
