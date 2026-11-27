@@ -4,7 +4,7 @@ import { MEMBERSHIP_INCLUDES, OFFERINGS, REFERRAL_TERMS } from '@/lib/config';
 export const metadata = { title: 'Membership' };
 
 const FAQ = [
-  ['Who is the Alliance for?', 'Independent marketing leaders: fractional and operating CMOs, and the senior specialists and consultants who work beside them. Members are building a firm they own, not just a calendar of hours.'],
+  ['Who is the Alliance for?', 'Marketing entrepreneurs: fractional and operating CMOs, marketing specialists, consultants and advisors, and marketers building a practice of their own. Members are building a firm they own, not just a calendar of hours.'],
   ['Do I keep my own brand and clients?', 'Yes. You build under your own name. Your firm, your self-sourced clients and your intellectual property stay yours. The membership is one flat monthly fee, with no franchise, no royalties and no cut of your client work.'],
   ['Who is behind it?', 'The Alliance was founded by Joe Frost, who founded yorCMO in 2016 and the Fractional Professionals Association, created the FROST framework and wrote Million Dollar Fractional Firm. FROST is the path members follow, supported by office hours, roundtables and the member community.'],
   ['How does billing work?', `Membership is ${OFFERINGS.membership.price} a month per person, billed by card through Stripe. Update your card, download invoices or cancel from your account.`],

@@ -37,6 +37,7 @@ export default function OperatingCMO() {
           <h2>This isn't for everyone.</h2>
           <p className="lede">It's for CMOs ready to stop competing on hours and price and start leading. If that's you, come help us write the rules.</p>
           <p style={{ marginTop: 26 }}><Link className="btn dark" href="/join">Join the Alliance</Link></p>
+          <p className="small muted" style={{ marginTop: 18 }}>Not a CMO? The Alliance is for specialists, consultants and marketers too. <Link href="/#who">See who's in it</Link>.</p>
         </div>
       </section>
     </>

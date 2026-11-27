@@ -12,7 +12,7 @@ export default function Story() {
       <section className="hero page-hero">
         <div className="wrap">
           <div className="kicker">Our story</div>
-          <h1>We spent ten years helping CMOs go fractional. <em>Now we help them own what they build.</em></h1>
+          <h1>We spent ten years helping CMOs go independent. <em>Now we help every marketing entrepreneur own what they build.</em></h1>
         </div>
       </section>
 
@@ -64,9 +64,9 @@ export default function Story() {
                 partners and still never ended up in front of buyers.
               </p>
               <p>
-                <strong>Value that walks out the door.</strong> Every company that hires a CMO counts on their
-                expertise to build value in its business. When the CMO stops showing up, the pay stops, and the
-                systems, the team and the know-how stay behind. The CMO builds equity for everyone but themselves.
+                <strong>Value that walks out the door.</strong> Every company that hires an independent marketer counts
+                on their expertise to build value in its business. When they stop showing up, the pay stops, and the
+                systems, the team and the know-how stay behind. They build equity for everyone but themselves.
               </p>
               <p>
                 Owners have the mirror image of the problem. When the person running marketing leaves, marketing
@@ -80,9 +80,14 @@ export default function Story() {
             <div>
               <h2>The Alliance</h2>
               <p>
-                So we're spending the next decade on a different goal: helping fractional executives become
-                <strong> equity executives</strong>, leaders who build firms with their own clients, their own
-                intellectual property, and delivery that doesn't depend on their calendar.
+                Those problems were never just a CMO problem. The SEO specialist, the brand consultant, the content
+                strategist and the marketer going out on their own all live them too. And they need each other:
+                leaders need trusted hands to deliver, and specialists need the work leaders bring in.
+              </p>
+              <p>
+                So we're spending the next decade on a different goal: helping marketing entrepreneurs build firms
+                with their own clients, their own intellectual property, and delivery that doesn't depend on their
+                calendar. The Alliance is the community where they do it together.
               </p>
               <p>
                 The Alliance puts leads first, with a book, speaking and a community that put members in rooms owners

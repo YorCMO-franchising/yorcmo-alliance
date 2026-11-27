@@ -25,9 +25,10 @@ export default function TalkForm() {
           <label htmlFor="t-role">I am a…</label>
           <select id="t-role" name="role" defaultValue="">
             <option value="">Choose one</option>
-            <option>Fractional or operating CMO</option>
+            <option>CMO (fractional or operating)</option>
             <option>Marketing specialist</option>
-            <option>Consultant</option>
+            <option>Consultant or advisor</option>
+            <option>Marketer going independent</option>
             <option>Other</option>
           </select>
         </div>

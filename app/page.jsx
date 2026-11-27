@@ -11,9 +11,9 @@ export default function Home() {
           <h1>You build equity for everyone but yourself. <em>Start building your own.</em></h1>
           <p className="lede">
             Every company that hires you counts on your expertise to build value in its business. When you stop
-            showing up, the pay stops, and the value you built stays with them. The Alliance is a membership for
-            independent marketing leaders, fractional and operating CMOs and the senior specialists who work beside
-            them, who want what they know to build something they own.
+            showing up, the pay stops, and the value you built stays with them. The Alliance is a community for
+            marketing entrepreneurs (CMOs, marketers, specialists and consultants) who want what they know to build
+            something they own.
           </p>
           <div className="ctas">
             <Link className="btn" href="/join">Join the Alliance</Link>
@@ -36,7 +36,26 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="white">
+      <section className="white" id="who">
+        <div className="wrap">
+          <div className="section-head">
+            <div className="kicker">Who's in the Alliance</div>
+            <h2>Everyone who builds marketing for a living, on their own terms.</h2>
+            <p className="lede">
+              Different crafts, same goal: turn expertise into a firm you own. And everyone needs each other. Leaders
+              need trusted hands to deliver the work. Specialists need the work leaders bring in.
+            </p>
+          </div>
+          <div className="grid g4">
+            <div className="card"><span className="tag">Leaders</span><h3>CMOs</h3><p>Fractional and operating marketing leaders. Find specialists you trust to deliver, and pass on the work you can't take.</p></div>
+            <div className="card"><span className="tag">Specialists</span><h3>Marketing specialists</h3><p>SEO, paid media, content, design, RevOps, analytics. Get in front of the leaders and owners who need what you do.</p></div>
+            <div className="card"><span className="tag">Advisors</span><h3>Consultants</h3><p>Strategy, brand, sales and growth advisors. Productize what you know and license it to members across the Alliance.</p></div>
+            <div className="card"><span className="tag">Builders</span><h3>Marketers going independent</h3><p>Starting out or growing a solo practice into a firm. Build alongside people a few steps ahead of you.</p></div>
+          </div>
+        </div>
+      </section>
+
+      <section>
         <div className="wrap split">
           <div>
             <div className="kicker">How this started</div>
@@ -47,12 +66,13 @@ export default function Home() {
             </p>
             <p style={{ marginTop: 16 }}>
               The bet paid off. Since then, more than 25 CMOs have run our system, the 6 Fundamentals of Marketing,
-              for more than 100 companies. But working alongside those CMOs, we kept seeing the same two problems.
+              for more than 100 companies. But working alongside those CMOs, and the specialists and consultants they
+              partnered with, we kept seeing the same two problems.
             </p>
             <p>
-              <strong>They were hunting for clients alone.</strong> The work was excellent; the pipeline wasn't.
-              And <strong>they were building value that walked out the door with them.</strong> Every system they
-              installed, every team they trained, stayed with the client.
+              <strong>Independent marketers hunt for clients alone.</strong> The work is excellent; the pipeline isn't.
+              And <strong>the value they build walks out the door with them.</strong> Every system they install,
+              every team they train, stays with the client.
             </p>
             <p>The Alliance is our answer to both.</p>
             <p style={{ marginTop: 22 }}><Link href="/story">The full story →</Link></p>
@@ -65,7 +85,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section>
+      <section className="white">
         <div className="wrap">
           <div className="section-head">
             <div className="kicker">What the Alliance does</div>
@@ -119,8 +139,7 @@ export default function Home() {
               steady income, to a practice that scales, to a firm they own.
             </p>
             <blockquote className="founder-quote">
-              "We spent the first decade teaching CMOs how to become fractional executives. Let's spend the next
-              decade teaching them how to become equity executives."
+              "What you know should build something you own, in your own firm."
             </blockquote>
             <p style={{ marginTop: 22 }}><Link className="btn" href="/story#joe">More about Joe</Link></p>
           </div>

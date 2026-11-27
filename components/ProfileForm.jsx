@@ -11,7 +11,7 @@ export default function ProfileForm({ p }) {
       {state?.ok && <div className="alert ok" role="status">{state.ok}</div>}
       <div className="row">
         <div><label htmlFor="full_name">Full name</label><input id="full_name" name="full_name" required defaultValue={p.full_name || ''} /></div>
-        <div><label htmlFor="title">Title</label><input id="title" name="title" defaultValue={p.title || ''} placeholder="Operating CMO" /></div>
+        <div><label htmlFor="title">Title</label><input id="title" name="title" defaultValue={p.title || ''} placeholder="e.g. Fractional CMO, SEO specialist, Brand consultant" /></div>
       </div>
       <div className="row">
         <div><label htmlFor="firm">Firm</label><input id="firm" name="firm" defaultValue={p.firm || ''} /></div>

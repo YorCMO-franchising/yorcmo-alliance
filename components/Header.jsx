@@ -14,7 +14,7 @@ export default async function Header() {
           <Link href="/story">Our story</Link>
           <Link href="/membership">Membership</Link>
           <Link href="/marketplace">Marketplace</Link>
-          <Link href="/operating-cmo">Operating CMO</Link>
+          <Link href="/#who">Who it's for</Link>
           {session ? (
             <>
               <Link href={member ? '/member' : '/account'}>{member ? 'Member area' : 'My account'}</Link>
