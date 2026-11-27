@@ -25,7 +25,7 @@ export default async function Header() {
           ) : (
             <>
               <Link href="/login">Sign in</Link>
-              <Link className="btn" href="/join">Join the Alliance</Link>
+              <Link className="btn" href="/apply">Apply to join</Link>
             </>
           )}
         </nav>

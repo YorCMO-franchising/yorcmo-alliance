@@ -227,7 +227,7 @@ export default function Story() {
           <div className="card center">
             <h3>Help us write the next ten years.</h3>
             <p>The Alliance is for marketing leaders who are ready to stop competing on hours and start building something they own.</p>
-            <p style={{ marginTop: 20 }}><Link className="btn dark block" href="/join">Join the Alliance</Link></p>
+            <p style={{ marginTop: 20 }}><Link className="btn dark block" href="/apply">Apply to join</Link></p>
           </div>
         </div>
       </section>

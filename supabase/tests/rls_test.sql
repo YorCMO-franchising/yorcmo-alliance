@@ -140,5 +140,22 @@ select pg_temp.check((select count(*) from public.contact_requests) = 0, 'member
 select pg_temp.act_as('00000000-0000-0000-0000-00000000000a', 'admin@example.com');
 select pg_temp.check((select count(*) from public.contact_requests) = 1, 'admin can read call requests');
 
+-- ---------- Applications ----------
+select pg_temp.act_as(null, null);
+insert into public.applications (full_name, email, status) values ('Ann Applicant', 'ann@example.com', 'submitted');
+set role anon;
+do $$ begin
+  insert into public.applications (full_name, email) values ('Bot', 'bot@example.com');
+  raise exception 'FAIL: anonymous insert into applications';
+exception when insufficient_privilege then null;
+end $$;
+select 'PASS: public cannot write applications directly';
+reset role;
+select pg_temp.act_as('00000000-0000-0000-0000-00000000000c', 'buyer@example.com');
+select pg_temp.check((select count(*) from public.applications) = 0, 'members cannot read applications');
+select pg_temp.act_as('00000000-0000-0000-0000-00000000000a', 'admin@example.com');
+update public.applications set interview_done = true where email = 'ann@example.com';
+select pg_temp.check((select interview_done from public.applications where email = 'ann@example.com'), 'admin can read and update applications');
+
 select pg_temp.act_as(null, null);
 select 'ALL CHECKS PASSED';

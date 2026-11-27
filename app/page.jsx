@@ -16,7 +16,7 @@ export default function Home() {
             something they own.
           </p>
           <div className="ctas">
-            <Link className="btn" href="/join">Join the Alliance</Link>
+            <Link className="btn" href="/apply">Apply to join</Link>
             <Link className="btn ghost" href="/talk">Talk to us first</Link>
           </div>
           <p style={{ marginTop: 18 }}><Link href="/story" style={{ color: '#dfe5ee' }}>Read our story →</Link></p>
@@ -167,10 +167,11 @@ export default function Home() {
           <h2>One membership. Everything included.</h2>
           <p className="lede">
             Certification in the 6 Fundamentals, Cobbler, Microsoft Teams and GoHighLevel, office hours, research,
-            roundtables, your directory profile and the member marketplace. {OFFERINGS.membership.price} a month.
+            roundtables, your directory profile and the member marketplace. {OFFERINGS.membership.price} a month,
+            by application: every member is vetted through a review of their work, an interview and two references.
           </p>
           <p style={{ marginTop: 26, display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <Link className="btn dark" href="/join">Join the Alliance</Link>
+            <Link className="btn dark" href="/apply">Apply to join</Link>
             <Link className="btn outline" href="/talk">Talk to us first</Link>
           </p>
           <p className="quote" style={{ margin: '56px auto 0' }}>

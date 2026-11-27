@@ -21,7 +21,7 @@ export default function Talk() {
             </p>
           )}
           <p className="small muted" style={{ marginTop: 22 }}>
-            Ready already? <Link href="/join">Join the Alliance</Link>.
+            Ready already? <Link href="/apply">Apply to join</Link>.
           </p>
         </div>
         <div>

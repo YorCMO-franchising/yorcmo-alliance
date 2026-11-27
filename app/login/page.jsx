@@ -12,7 +12,7 @@ export default async function Login({ searchParams }) {
         <p className="muted" style={{ marginBottom: 20 }}>No password needed. We'll email you a one-time sign-in link.</p>
         {sp?.error && <div className="alert err">That sign-in link didn't work or has expired. Request a new one.</div>}
         <LoginForm next={next} />
-        <p className="small muted" style={{ marginTop: 18 }}>Not a member yet? <a href="/join">Join the Alliance</a>.</p>
+        <p className="small muted" style={{ marginTop: 18 }}>Not a member yet? <a href="/apply">Apply to join the Alliance</a>.</p>
       </div>
     </div>
   );

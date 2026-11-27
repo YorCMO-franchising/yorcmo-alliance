@@ -16,7 +16,7 @@ export default function Footer() {
             <Link href="/membership">Membership</Link>
             <Link href="/marketplace">Marketplace</Link>
             <Link href="/operating-cmo">Operating CMO™</Link>
-            <Link href="/join">Join</Link>
+            <Link href="/apply">Apply</Link>
           </div>
           <div>
             <h4>Members</h4>

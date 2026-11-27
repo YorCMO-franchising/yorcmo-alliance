@@ -12,7 +12,7 @@ const LINKS = [
   ['My profile', '/member/profile'],
 ];
 
-export default function SideNav({ admin, pending }) {
+export default function SideNav({ admin, pending, applications }) {
   const path = usePathname();
   const cur = (href, exact) => (exact ? path === href : path.startsWith(href)) ? 'page' : undefined;
   return (
@@ -25,7 +25,8 @@ export default function SideNav({ admin, pending }) {
       {admin && (
         <>
           <div className="label">Admin</div>
-          <Link href="/member/admin" aria-current={cur('/member/admin')}>Review listings{pending ? ` (${pending})` : ''}</Link>
+          <Link href="/member/admin/applications" aria-current={cur('/member/admin/applications')}>Applications{applications ? ` (${applications})` : ''}</Link>
+          <Link href="/member/admin" aria-current={path === '/member/admin' ? 'page' : undefined}>Review listings{pending ? ` (${pending})` : ''}</Link>
         </>
       )}
     </nav>

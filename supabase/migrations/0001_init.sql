@@ -226,3 +226,49 @@ create policy contact_requests_insert on public.contact_requests for insert to a
   with check (true);
 create policy contact_requests_admin_read on public.contact_requests for select to authenticated
   using (public.is_admin());
+
+-- ---------------------------------------------------------------------------
+-- Membership applications. Applicants pay a $350 fee when they apply; if
+-- accepted it covers the first month, if declined it is refunded in full.
+-- Written by the server (service role) and by admins; never readable by the
+-- public or by members.
+-- ---------------------------------------------------------------------------
+create table public.applications (
+  id uuid primary key default gen_random_uuid(),
+  status text not null default 'pending_payment'
+    check (status in ('pending_payment', 'submitted', 'approved', 'declined', 'withdrawn')),
+  full_name text not null,
+  email text not null,
+  firm text,
+  role text,
+  city text,
+  website text,
+  linkedin text,
+  years_experience integer check (years_experience between 0 and 60),
+  specialty text,
+  work_samples text,
+  ref1_name text, ref1_email text, ref1_relationship text,
+  ref2_name text, ref2_email text, ref2_relationship text,
+  goals text,
+  -- vetting checklist
+  samples_reviewed boolean not null default false,
+  interview_done boolean not null default false,
+  references_checked boolean not null default false,
+  review_notes text,
+  -- payment and decision
+  stripe_customer_id text,
+  stripe_payment_intent text,
+  paid_at timestamptz,
+  refunded_at timestamptz,
+  decided_at timestamptz,
+  decided_by uuid references public.profiles (id),
+  profile_id uuid references public.profiles (id),
+  created_at timestamptz not null default now(),
+  updated_at timestamptz not null default now()
+);
+create index applications_status_idx on public.applications (status, created_at);
+alter table public.applications enable row level security;
+create policy applications_admin_select on public.applications for select to authenticated
+  using (public.is_admin());
+create policy applications_admin_update on public.applications for update to authenticated
+  using (public.is_admin()) with check (public.is_admin());

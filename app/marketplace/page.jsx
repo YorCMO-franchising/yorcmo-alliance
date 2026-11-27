@@ -38,7 +38,7 @@ export default async function Marketplace() {
           <h1>Sell what you know. Buy the capacity you need.</h1>
           <p className="lede">A members-only market where Alliance members sell services, delivery capacity, playbooks and products to each other.</p>
           <div className="ctas">
-            <Link className="btn" href="/join">Join to buy and sell</Link>
+            <Link className="btn" href="/apply">Apply to buy and sell</Link>
             <Link className="btn ghost" href="/login?next=/member/marketplace">Members: sign in</Link>
           </div>
         </div>
@@ -91,7 +91,7 @@ export default async function Marketplace() {
         <div className="wrap">
           <h2>Buy and sell with members who get it.</h2>
           <p className="lede">The marketplace is included with Alliance membership.</p>
-          <p style={{ marginTop: 26 }}><Link className="btn dark" href="/join">Join the Alliance</Link></p>
+          <p style={{ marginTop: 26 }}><Link className="btn dark" href="/apply">Apply to join</Link></p>
         </div>
       </section>
     </>

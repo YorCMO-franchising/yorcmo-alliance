@@ -6,8 +6,8 @@ import { offeringForPrice } from '@/lib/config';
 export const runtime = 'nodejs';
 export const dynamic = 'force-dynamic';
 
-// Stripe → Supabase: create the member's account on first payment and keep
-// membership status in sync with their subscription.
+// Stripe → Supabase: mark application fees paid, and keep membership status in
+// sync with each member's subscription.
 export async function POST(request) {
   const body = await request.text();
   let event;
@@ -39,6 +39,18 @@ export async function POST(request) {
 }
 
 async function onCheckoutCompleted(db, session) {
+  if (session.mode === 'payment' && session.metadata?.kind === 'application') {
+    // Application fee paid: the application now goes to the review queue.
+    const { error } = await db.from('applications').update({
+      status: 'submitted',
+      paid_at: new Date().toISOString(),
+      stripe_customer_id: session.customer,
+      stripe_payment_intent: session.payment_intent,
+      updated_at: new Date().toISOString(),
+    }).eq('id', session.metadata.application_id).eq('status', 'pending_payment');
+    if (error) throw error;
+    return;
+  }
   if (session.mode !== 'subscription' || !session.subscription) return;
   const email = (session.customer_details?.email || session.customer_email || '').toLowerCase();
   const profileId = session.client_reference_id || (await ensureUser(db, email, session.metadata || {}));

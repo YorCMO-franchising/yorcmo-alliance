@@ -10,9 +10,9 @@ import path from 'node:path';
 const [appUrl, outDir, basePath] = process.argv.slice(2);
 if (!appUrl || !outDir || !basePath) throw new Error('usage: snapshot.mjs <appUrl> <outDir> <basePath>');
 
-const PUBLIC = ['/', '/story', '/membership', '/marketplace', '/operating-cmo', '/join', '/talk', '/login', '/welcome'];
+const PUBLIC = ['/', '/story', '/membership', '/marketplace', '/operating-cmo', '/apply', '/apply/submitted', '/talk', '/login'];
 const MEMBER = ['/member', '/member/marketplace', '/member/listings', '/member/listings/new', '/member/inbox',
-  '/member/members', '/member/profile', '/member/admin', '/account'];
+  '/member/members', '/member/profile', '/member/admin', '/member/admin/applications', '/account'];
 
 const fileFor = (route) => (route === '/' ? 'index.html' : `${route.replace(/^\//, '')}.html`);
 
