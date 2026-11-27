@@ -10,7 +10,7 @@ import path from 'node:path';
 const [appUrl, outDir, basePath] = process.argv.slice(2);
 if (!appUrl || !outDir || !basePath) throw new Error('usage: snapshot.mjs <appUrl> <outDir> <basePath>');
 
-const PUBLIC = ['/', '/story', '/membership', '/marketplace', '/operating-cmo', '/join', '/login', '/welcome'];
+const PUBLIC = ['/', '/story', '/membership', '/marketplace', '/operating-cmo', '/join', '/talk', '/login', '/welcome'];
 const MEMBER = ['/member', '/member/marketplace', '/member/listings', '/member/listings/new', '/member/inbox',
   '/member/members', '/member/profile', '/member/admin', '/account'];
 

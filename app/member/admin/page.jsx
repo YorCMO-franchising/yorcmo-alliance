@@ -7,11 +7,12 @@ export const metadata = { title: 'Review listings' };
 
 export default async function Admin() {
   const { supabase } = await requireAdmin();
-  const [{ data: pending }, { count: members }, { count: live }] = await Promise.all([
+  const [{ data: pending }, { count: members }, { count: live }, { data: calls }] = await Promise.all([
     supabase.from('listings').select('*, seller:profiles!listings_seller_id_fkey(full_name, firm, email)')
       .eq('status', 'pending').order('updated_at', { ascending: true }),
     supabase.from('profiles').select('id', { count: 'exact', head: true }).eq('membership_status', 'active'),
     supabase.from('listings').select('id', { count: 'exact', head: true }).eq('status', 'approved'),
+    supabase.from('contact_requests').select('*').order('created_at', { ascending: false }).limit(50),
   ]);
   return (
     <>
@@ -40,6 +41,24 @@ export default async function Admin() {
           </form>
         </div>
       )) : <div className="empty">Nothing waiting for review.</div>}
+
+      <h2 style={{ fontSize: 26, marginTop: 44 }}>Call requests</h2>
+      <p className="muted" style={{ marginBottom: 14 }}>Prospective members who asked to talk first.</p>
+      {calls?.length ? (
+        <table className="t">
+          <thead><tr><th>When</th><th>Who</th><th>Role</th><th>Message</th></tr></thead>
+          <tbody>
+            {calls.map((c) => (
+              <tr key={c.id}>
+                <td style={{ whiteSpace: 'nowrap' }}>{new Date(c.created_at).toLocaleDateString('en-US', { dateStyle: 'medium' })}</td>
+                <td><strong>{c.full_name}</strong>{c.firm ? `, ${c.firm}` : ''}<div><a href={`mailto:${c.email}`}>{c.email}</a></div></td>
+                <td>{c.role || '—'}</td>
+                <td style={{ whiteSpace: 'pre-wrap' }}>{c.message || '—'}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      ) : <div className="empty">No call requests yet.</div>}
     </>
   );
 }

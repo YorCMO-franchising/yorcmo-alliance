@@ -206,3 +206,23 @@ create policy inquiries_insert on public.inquiries for insert to authenticated
 -- Member services: read your own.
 create policy member_services_select on public.member_services for select to authenticated
   using (profile_id = auth.uid() or public.is_admin());
+
+-- ---------------------------------------------------------------------------
+-- "Talk to us first" requests from prospective members. Anyone can submit;
+-- only admins can read.
+-- ---------------------------------------------------------------------------
+create table public.contact_requests (
+  id uuid primary key default gen_random_uuid(),
+  full_name text not null check (char_length(full_name) between 1 and 120),
+  email text not null check (char_length(email) between 3 and 200),
+  firm text check (char_length(firm) <= 120),
+  role text check (char_length(role) <= 80),
+  message text check (char_length(message) <= 2000),
+  created_at timestamptz not null default now()
+);
+alter table public.contact_requests enable row level security;
+grant insert on public.contact_requests to anon, authenticated;
+create policy contact_requests_insert on public.contact_requests for insert to anon, authenticated
+  with check (true);
+create policy contact_requests_admin_read on public.contact_requests for select to authenticated
+  using (public.is_admin());

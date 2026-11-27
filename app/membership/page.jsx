@@ -4,7 +4,8 @@ import { MEMBERSHIP_INCLUDES, OFFERINGS, REFERRAL_TERMS } from '@/lib/config';
 export const metadata = { title: 'Membership' };
 
 const FAQ = [
-  ['Who is the Alliance for?', 'CMOs, fractional and operating executives, marketers, specialists and consultants who want to build a firm they own, not just a calendar of hours.'],
+  ['Who is the Alliance for?', 'Independent marketing leaders: fractional and operating CMOs, and the senior specialists and consultants who work beside them. Members are building a firm they own, not just a calendar of hours.'],
+  ['Do I keep my own brand and clients?', 'Yes. You build under your own name. Your firm, your self-sourced clients and your intellectual property stay yours. The membership is one flat monthly fee, with no franchise, no royalties and no cut of your client work.'],
   ['Who is behind it?', 'The Alliance was founded by Joe Frost, who founded yorCMO in 2016 and the Fractional Professionals Association, created the FROST framework and wrote Million Dollar Fractional Firm. FROST is the path members follow, supported by office hours, roundtables and the member community.'],
   ['How does billing work?', `Membership is ${OFFERINGS.membership.price} a month per person, billed by card through Stripe. Update your card, download invoices or cancel from your account.`],
   ['What happens after I pay?', 'Your account is created right away. Sign in with your email (we send a one-time link, no password), complete your profile, and the member area, directory and marketplace open up.'],
@@ -41,6 +42,7 @@ export default function Membership() {
             <div className="price">{OFFERINGS.membership.price} <small>{OFFERINGS.membership.unit}</small></div>
             <p>{OFFERINGS.membership.summary}</p>
             <Link className="btn" href="/join">Join now</Link>
+            <p className="small" style={{ marginTop: 12, textAlign: 'center' }}><Link href="/talk" style={{ color: '#dfe5ee' }}>Prefer to talk first? Request a call</Link></p>
             <p className="small" style={{ marginTop: 14, color: '#95a2b5' }}>Billed monthly through Stripe.</p>
           </aside>
         </div>
@@ -56,7 +58,7 @@ export default function Membership() {
               <p>{a}</p>
             </div>
           ))}
-          <p style={{ marginTop: 24 }}><Link className="btn dark" href="/join">Join the Alliance</Link></p>
+          <p style={{ marginTop: 24, display: 'flex', gap: 12, flexWrap: 'wrap' }}><Link className="btn dark" href="/join">Join the Alliance</Link><Link className="btn outline" href="/talk">Talk to us first</Link></p>
         </div>
       </section>
     </>

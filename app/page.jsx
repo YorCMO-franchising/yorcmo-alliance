@@ -12,11 +12,26 @@ export default function Home() {
           <p className="lede">
             Every company that hires you counts on your expertise to build value in its business. When you stop
             showing up, the pay stops, and the value you built stays with them. The Alliance is a membership for
-            marketing leaders who want what they know to build something they own.
+            independent marketing leaders, fractional and operating CMOs and the senior specialists who work beside
+            them, who want what they know to build something they own.
           </p>
           <div className="ctas">
             <Link className="btn" href="/join">Join the Alliance</Link>
-            <Link className="btn ghost" href="/story">Read our story</Link>
+            <Link className="btn ghost" href="/talk">Talk to us first</Link>
+          </div>
+          <p style={{ marginTop: 18 }}><Link href="/story" style={{ color: '#dfe5ee' }}>Read our story →</Link></p>
+        </div>
+      </section>
+
+      <section className="independence">
+        <div className="wrap">
+          <div className="kicker">You stay independent</div>
+          <h2>Your firm. Your name. Your clients.</h2>
+          <div className="grid g4" style={{ marginTop: 26 }}>
+            <div className="card"><h3>Keep your brand</h3><p>Build under your own name. The Alliance is behind you, not on your business card.</p></div>
+            <div className="card"><h3>Your clients and IP stay yours</h3><p>Your firm, your self-sourced clients and your intellectual property belong to you.</p></div>
+            <div className="card"><h3>One flat membership</h3><p>{OFFERINGS.membership.price} a month. No franchise, no royalties, no cut of your client work.</p></div>
+            <div className="card"><h3>Month to month</h3><p>No long-term agreement. Manage or cancel your membership from your account anytime.</p></div>
           </div>
         </div>
       </section>
@@ -137,7 +152,7 @@ export default function Home() {
           </p>
           <p style={{ marginTop: 26, display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
             <Link className="btn dark" href="/join">Join the Alliance</Link>
-            <Link className="btn outline" href="/membership">What's included</Link>
+            <Link className="btn outline" href="/talk">Talk to us first</Link>
           </p>
           <p className="quote" style={{ margin: '56px auto 0' }}>
             We are not freelancers. <em>We are firm owners.</em>

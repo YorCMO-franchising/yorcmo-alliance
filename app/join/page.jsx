@@ -33,7 +33,7 @@ export default async function Join({ searchParams }) {
           ) : (
             <div className="card"><h3>Online sign-up opens soon</h3><p>Payments aren't switched on yet. Please check back shortly.</p></div>
           )}
-          <p className="small muted" style={{ marginTop: 16 }}>Already a member? <a href="/login">Sign in</a>.</p>
+          <p className="small muted" style={{ marginTop: 16 }}>Prefer to talk first? <a href="/talk">Request a 20-minute call</a>. Already a member? <a href="/login">Sign in</a>.</p>
         </div>
       </div>
     </section>

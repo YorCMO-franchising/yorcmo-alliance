@@ -129,5 +129,16 @@ end $$;
 select 'PASS: lapsed member cannot list';
 select pg_temp.check((select count(*) from public.member_services) = 0, 'member_services readable only as own rows');
 
+-- ---------- Talk-to-us requests ----------
+select pg_temp.act_as(null, null);
+set role anon;
+insert into public.contact_requests (full_name, email, message) values ('Pat Prospect', 'pat@example.com', 'Can we talk?');
+select 'PASS: signed-out visitor can request a call';
+reset role;
+select pg_temp.act_as('00000000-0000-0000-0000-00000000000c', 'buyer@example.com');
+select pg_temp.check((select count(*) from public.contact_requests) = 0, 'members cannot read call requests');
+select pg_temp.act_as('00000000-0000-0000-0000-00000000000a', 'admin@example.com');
+select pg_temp.check((select count(*) from public.contact_requests) = 1, 'admin can read call requests');
+
 select pg_temp.act_as(null, null);
 select 'ALL CHECKS PASSED';
